@@ -1,0 +1,31 @@
+[project]
+name = "dh-file-sorter"
+version = "0.1.0"
+description = "Сортирует файлы в определенной папке по типам"
+authors = [
+    {name = "John_Soi",email = "un.perso@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.poetry]
+packages = [{include = "dh_file_sorter"}]
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.1.0"
+black = "^25.9.0"
+pylint = "^3.3.9"
+pyright = "^1.1.406"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length=120
+length_sort=true
