@@ -25,7 +25,7 @@ dh-file-sorter
 Для запуска скрипта нужно находясь в папке с проектом (на уровне ```dh-file-sorter```) выполнить команду в терминале:
 
 ```bash
-python  dh_file_sorter/main.py --path <путь до папки> [-v] 
+python  dh_file_sorter/main.py --path <путь до папки> [-v true] 
 ```
 ---
 

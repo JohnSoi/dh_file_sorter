@@ -43,7 +43,7 @@ FILE_EXTENSIONS_BY_TYPE: dict[FileType, tuple[str, ...]] = {
     FileType.IMAGE: (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"),
     FileType.AUDIO: (".mp3", ".wav", ".aiff", ".aiff"),
     FileType.VIDEO: (".mp4", ".avi"),
-    FileType.DOCUMENT: (".doc", ".docx", ".pptx", ".ppt", ".xls", ".xlsx", ".txt"),
+    FileType.DOCUMENT: (".doc", ".docx", ".pptx", ".ppt", ".xls", ".xlsx", ".txt", ".pdf", ".csv"),
     FileType.ARCHIVE: (".zip", ".7z", ".rar"),
     FileType.INSTALL: (".exe", ".msi"),
 }
