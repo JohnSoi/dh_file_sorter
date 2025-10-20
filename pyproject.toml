@@ -6,7 +6,7 @@ authors = [
     {name = "John_Soi",email = "un.perso@yandex.ru"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = []
 
 [tool.poetry]
