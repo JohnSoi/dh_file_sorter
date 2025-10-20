@@ -6,7 +6,7 @@ from os import listdir
 from shutil import move
 from os.path import join, isfile
 from pathlib import Path
-from argparse import Namespace, ArgumentParser
+from argparse import Namespace, ArgumentParser, BooleanOptionalAction
 from functools import cached_property
 
 from utils import get_path_inst, get_or_create_if_not_exist_folder
@@ -55,8 +55,18 @@ class FileSorter:
         :return: путь по папки с фалами, нужен ли консольный вывод
         """
         parser: ArgumentParser = ArgumentParser(description="Сортирует файлы в определенной папке по типам")
-        parser.add_argument("-p", "--path", type=str, help="Путь к папке с файлами для сортировки")
-        parser.add_argument("-v", "--verbose", type=bool, help="Выводить информацию о работе процесса")
+        parser.add_argument(
+            "-p",
+            "--path",
+            type=str,
+            help="Путь к папке с файлами для сортировки"
+        )
+        parser.add_argument(
+            "-v", "--verbose",
+            type=bool,
+            help="Выводить информацию о работе процесса",
+            action=BooleanOptionalAction
+        )
         arguments: Namespace = parser.parse_args()
 
         return get_path_inst(arguments.path), arguments.verbose
